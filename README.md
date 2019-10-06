@@ -1,6 +1,7 @@
 # ENCRYPTION
 ### RSA ENCRYPTION
 **__OPERATION__**
+
 RSA involves a public key and private key. The public key can be known to everyone; it is used to encrypt messages. Messages encrypted using the public key can only be decrypted with the private key. The keys for the RSA algorithm are generated the following way:
   1. Choose two different large random prime numbers **p** and **q**.
   2. Calculate **n**=_p_*_q_ here,**n** is the modulus for the public key and the private keys.
@@ -9,14 +10,17 @@ RSA involves a public key and private key. The public key can be known to everyo
   5. Compute **d** to satisfy the congruence relation **de**=1 mod(phi(n)) . i.e.:**de=1+xphi(n)** for some integer **x**.(Simply to say **d=e^-1 mod(phi(n))**.  here, **d** is kept as the private key exponent.
   
   **__ENCRYPTING MESSAGE__**
+  
   Alice gives her public key (**n,e**) to Bob and keeps her private key secret. Bob wants to send message **M** to Alice.
   First he turns **M** into its numerical value **m**. To encrypt the message Bob will use the equation, **__c=m^e mod(n)__** and send **c** to Alice. 
   
   **__DECRYPTING MESSAGE__**
+  
   Alice can recover **m** from **c** by using her private key **d** in the following procedure:
 **__m=c^d mod n__**
  
   **__ WORKING EXAMPLE__**
+  
   First we need to-
   1.Choose 2 random prime number: **p**=2,**q**=7. 
   2.Compute **n**=pq=2*7=14
