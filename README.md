@@ -19,7 +19,7 @@ RSA involves a public key and private key. The public key can be known to everyo
   Alice can recover **m** from **c** by using her private key **d** in the following procedure:
 **__m=c^d mod n__**
  
-  **__ WORKING EXAMPLE__**
+  **__WORKING EXAMPLE__**
   
   First we need to-
   1.Choose 2 random prime number: **p**=2,**q**=7. 
@@ -27,12 +27,17 @@ RSA involves a public key and private key. The public key can be known to everyo
   3.Compute the number of co-prime: phi(n)=(p-1)(q-1)=1*6=6
   4.Choose e: Possible numbers that is co-prime with 3120 [gcd(e,6)=1] : 5. Therefor e=5
   5.Choose d: inverse of **e mod phi(n)**= inverse of 5 mod 6= -1,5,11,17 ... . d=5
-  TO ENCRYPT **b**:
+  
+  **TO ENCRYPT**
+  
+  **b**:
     The public key is (n=14,e=5) and b=2.
     c=2^5 mod 14
      =4
-   **TO DECRYPT :**
-   Private key d=5
+  
+  **TO DECRYPT :**
+  
+  Private key d=5
    m=c^5 mod 14
     =4^5 mod 14
     =2
