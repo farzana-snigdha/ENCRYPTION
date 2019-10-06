@@ -37,8 +37,9 @@ RSA involves a public key and private key. The public key can be known to everyo
   
   **TO DECRYPT :**
   
-  Private key d=5
-   m=c^5 mod 14
+  Private key: d=5.
+  
+   **m**=c^5 mod 14
     =4^5 mod 14
     =2
     =b
